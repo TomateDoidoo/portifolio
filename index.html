@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samuel Borborema Campos | Desenvolvedor Front-end</title>
+<meta name="description" content="Portfólio de desenvolvedor front-end: projetos, habilidades e contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="90" tabindex="0">
+<div class="scroll-bar"></div>
+<canvas id="galaxia" aria-hidden="true"></canvas>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#inicio"><span class="logo">SC</span><span>Samuel Campos</span></a>
+    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu"><i class="bi bi-list fs-2"></i></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-brand btn-sm rounded-pill px-3" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="inicio">
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+        <p class="text-secondary mb-2 animate__animated animate__fadeInDown">Olá, eu sou</p>
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInUp" style="animation-delay:.2s"><span class="shimmer">Samuel Borborema Campos</span></h1>
+        <p class="hero-sub mb-3 animate__animated animate__fadeInUp" style="animation-delay:.4s">Estudante de desenvolvimento front-end. Eu crio <span class="typed" id="typed"></span><span class="caret"></span></p>
+        <p class="text-secondary mb-4 lead-sm mx-auto mx-lg-0 animate__animated animate__fadeInUp" style="animation-delay:.6s">Transformo design em código limpo, rápido e acessível, com HTML, CSS, JavaScript e Bootstrap.</p>
+        <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start animate__animated animate__fadeInUp" style="animation-delay:.8s">
+          <a href="#projetos" class="btn btn-brand btn-lg pulse">Ver projetos</a>
+          <a href="#contato" class="btn btn-ghost btn-lg">Falar comigo</a>
+        </div>
+      </div>
+      <div class="col-lg-5 order-1 order-lg-2 animate__animated animate__fadeInRight" style="animation-delay:.5s">
+        <div class="photo-wrap">
+          <div class="avatar">
+            <i class="bi bi-person"></i>
+            <!-- FOTO: salve sua foto na mesma pasta do index.html e troque o nome no src abaixo -->
+            <img src="img/" alt="Foto de Samuel Borborema Campos" onerror="this.remove()">
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+<section id="sobre" class="bg-navy">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7 reveal">
+        <h2 class="mb-4">Sobre mim</h2>
+        <p class="text-secondary">Sou estudante de desenvolvimento front-end e aprendo construindo. Já fiz um sistema solar, uma landing page responsiva, o site de perfumes da BL'S Couture e o Cine Connect, uma plataforma para assistir junto com amigos.</p>
+        <p class="text-secondary">Gosto de unir design e código: desenho a interface no Figma e coloco no ar com HTML, CSS e JavaScript.</p>
+      </div>
+      <div class="col-lg-5 reveal">
+        <div class="row text-center g-3">
+          <div class="col-6"><div class="stat"><strong data-count="4">0</strong><span>projetos</span></div></div>
+          <div class="col-6"><div class="stat"><strong data-count="14">0</strong><span>ferramentas</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="mb-2 reveal">Skills</h2>
+    <p class="text-secondary mb-5">Ferramentas que eu uso no dia a dia.</p>
+    <div class="tools reveal">
+      <div class="tool" title="HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="HTML" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="CSS" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Vue.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vuejs/vuejs-original.svg" alt="Vue.js" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Bootstrap"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Figma"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/figma/figma-original.svg" alt="Figma" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Animate.css"><span>Animate.css</span></div>
+      <div class="tool" title="jQuery"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jquery/jquery-original.svg" alt="jQuery" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Canva"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/canva/canva-original.svg" alt="Canva" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Tailwind CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="Git"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+      <div class="tool" title="GitHub"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="GitHub" loading="lazy" onerror="this.replaceWith(this.alt)"></div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos" class="bg-navy">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-5">
+      <!-- COMO ADICIONAR O PRINT: salve a imagem na pasta "img" e coloque o nome dela no src do card -->
+      <h2 class="mb-0">Projetos</h2>
+      <div class="d-flex gap-2" role="group" aria-label="Filtrar projetos">
+        <button class="btn btn-sm btn-ghost active" data-filter="todos">Todos</button>
+        <button class="btn btn-sm btn-ghost" data-filter="web">Web</button>
+        <button class="btn btn-sm btn-ghost" data-filter="landing">Landing</button>
+        <button class="btn btn-sm btn-ghost" data-filter="app">App</button>
+      </div>
+    </div>
+    <div class="row g-4">
+      <!-- Projeto: Sistema solar | PRINT: troque o nome da imagem no src da tag <img> | LINK: troque o href do botão "Acessar site" e o data-live -->
+      <div class="col-md-6 col-lg-3 proj" data-cat="web"><article class="project-card h-100"><div class="thumb"><i class="bi bi-stars"></i><img src="img/sistema-solar.jpg" alt="Print do projeto Sistema solar" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">Sistema solar</h3><p class="small text-secondary">Atlas interativo do sistema solar, com os planetas em órbita.</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Sistema solar" data-desc="Atlas interativo do sistema solar (Orbital Explorer), com os planetas girando em órbita ao redor do sol." data-tech="HTML, CSS, JavaScript" data-code="" data-live="https://tomatedoidoo.github.io/SistemaSolar/">Ver detalhes</button><a class="btn btn-sm btn-brand" href="https://tomatedoidoo.github.io/SistemaSolar/" target="_blank" rel="noopener">Acessar site <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+      <!-- Projeto: Landing page SENAI | PRINT: troque o nome da imagem no src da tag <img> | LINK: troque o href do botão "Acessar site" e o data-live -->
+      <div class="col-md-6 col-lg-3 proj" data-cat="landing"><article class="project-card h-100"><div class="thumb"><i class="bi bi-window-desktop"></i><img src="img/landing-senai.jpg" alt="Print do projeto Landing page SENAI" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">Landing page SENAI</h3><p class="small text-secondary">Postura Profissional: landing page responsiva do Manual de Boas Práticas.</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Landing page SENAI" data-desc="Landing page responsiva “Postura Profissional começa aqui”, do Manual de Boas Práticas do SENAI Morvan Figueiredo." data-tech="HTML, CSS" data-code="" data-live="https://tomatedoidoo.github.io/landing-page-senai/">Ver detalhes</button><a class="btn btn-sm btn-brand" href="https://tomatedoidoo.github.io/landing-page-senai/" target="_blank" rel="noopener">Acessar site <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+      <!-- Projeto: BL'S Couture | PRINT: troque o nome da imagem no src da tag <img> | LINK: troque o href do botão "Acessar site" e o data-live -->
+      <div class="col-md-6 col-lg-3 proj" data-cat="web"><article class="project-card h-100"><div class="thumb"><i class="bi bi-droplet-half"></i><img src="img/bls-couture.jpg" alt="Print do projeto BL'S Couture" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">BL'S Couture</h3><p class="small text-secondary">Loja de perfumes com coleção exclusiva e carrinho.</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#projModal" data-title="BL'S Couture" data-desc="Site de perfumes da BL'S Couture, empresa criada em um trabalho, com coleção feminina e masculina, carrinho e botão de WhatsApp." data-tech="HTML, CSS, JavaScript" data-code="" data-live="https://tomatedoidoo.github.io/Bls-Perfumes/">Ver detalhes</button><a class="btn btn-sm btn-brand" href="https://tomatedoidoo.github.io/Bls-Perfumes/" target="_blank" rel="noopener">Acessar site <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+      <!-- Projeto: Cine Connect | PRINT: troque o nome da imagem no src da tag <img> | LINK: troque o href do botão "Acessar site" e o data-live -->
+      <div class="col-md-6 col-lg-3 proj" data-cat="app"><article class="project-card h-100"><div class="thumb"><i class="bi bi-camera-reels"></i><img src="img/cine-connect.jpg" alt="Print do projeto Cine Connect" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">Cine Connect</h3><p class="small text-secondary">Compartilhe a tela e curta o momento com os amigos em salas privadas.</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Cine Connect" data-desc="Plataforma para compartilhar a tela e assistir junto com amigos: crie uma sala, envie o código e entre em uma sessão privada." data-tech="" data-code="" data-live="https://cineconnect-i09n.onrender.com/">Ver detalhes</button><a class="btn btn-sm btn-brand" href="https://cineconnect-i09n.onrender.com/" target="_blank" rel="noopener">Acessar site <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+    </div>
+  </div>
+</section>
+
+<section id="formacao">
+  <div class="container">
+    <h2 class="mb-5">Formação</h2>
+    <div class="timeline">
+      <div class="item"><h3 class="h6 mb-0">Estudante de desenvolvimento front-end</h3><small class="text-secondary">Instituição · período</small><p class="small mt-2 mb-0">Cite seu curso e o que já estudou.</p></div>
+      <div class="item"><h3 class="h6 mb-0">Cursos e certificados</h3><small class="text-secondary">Cisco Networking Academy e AWS Training · 2026</small><p class="small mt-2 mb-0">HTML Essentials, JavaScript Essentials 1 e AWS Cloud Practitioner Essentials.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="certificados" class="bg-navy">
+  <div class="container">
+    <!-- COMO ADICIONAR: salve a imagem na pasta "certificados" e coloque o nome dela no src do card -->
+    <h2 class="mb-5">Certificados</h2>
+    <div class="row g-4">
+      <!-- Certificado: HTML Essentials | troque o src da imagem e o href do botão "Acessar certificado" (use target="_blank" rel="noopener") -->
+      <div class="col-md-6 col-lg-4 cert"><article class="project-card h-100"><div class="thumb"><i class="bi bi-award"></i><img src="img/html-essentials.jpg" alt="Certificado HTML Essentials" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">HTML Essentials</h3><p class="small text-secondary">Cisco Networking Academy · maio de 2026</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#certModal" data-title="HTML Essentials">Ver certificado</button><a class="btn btn-sm btn-brand" href="https://www.netacad.com/recognitions/verify/b7f15077-399e-4ef5-a059-d51453baf8fd" target="_blank" rel="noopener">Acessar certificado <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+      <!-- Certificado: JavaScript Essentials 1 | troque o src da imagem e o href do botão "Acessar certificado" (use target="_blank" rel="noopener") -->
+      <div class="col-md-6 col-lg-4 cert"><article class="project-card h-100"><div class="thumb"><i class="bi bi-award"></i><img src="img/javascript-essentials-1.jpg" alt="Certificado JavaScript Essentials 1" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">JavaScript Essentials 1</h3><p class="small text-secondary">Cisco Networking Academy · agosto de 2026</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#certModal" data-title="JavaScript Essentials 1">Ver certificado</button><a class="btn btn-sm btn-brand" href="https://www.netacad.com/recognitions/verify/d2d479a3-2b25-41e1-8ae8-32f08a85c283" target="_blank" rel="noopener">Acessar certificado <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+      <!-- Certificado: AWS Cloud Practitioner Essentials (Português) | troque o src da imagem e o href do botão "Acessar certificado" (use target="_blank" rel="noopener") -->
+      <div class="col-md-6 col-lg-4 cert"><article class="project-card h-100"><div class="thumb"><i class="bi bi-award"></i><img src="img/aws-cloud-practitioner.jpg" alt="Certificado AWS Cloud Practitioner Essentials (Português)" loading="lazy" onerror="this.remove()"></div><div class="p-3"><h3 class="h6">AWS Cloud Practitioner Essentials (Português)</h3><p class="small text-secondary">AWS Training & Certification · maio de 2026</p><div class="d-flex flex-wrap gap-2"><button class="btn btn-sm btn-ghost" data-bs-toggle="modal" data-bs-target="#certModal" data-title="AWS Cloud Practitioner Essentials (Português)">Ver certificado</button><a class="btn btn-sm btn-brand" href="https://skillbuilder.aws/learn/ZEVZZ1D4AS/introduction-to-generative-ai--art-of-the-possible-portugus/HWBPWKF7SU" target="_blank" rel="noopener">Acessar certificado <i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></article></div>
+    </div>  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h2 class="mb-3">Vamos conversar</h2>
+        <p class="text-secondary">Tem um projeto ou uma vaga? Envie uma mensagem.</p>
+        <div class="d-flex gap-3 fs-3">
+          <a href="https://github.com/seu-usuario" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/seu-usuario" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:seu@email.com" aria-label="E-mail"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <form id="form" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6"><label class="form-label" for="nome">Nome</label><input id="nome" class="form-control" required><div class="invalid-feedback">Informe seu nome.</div></div>
+          <div class="col-md-6"><label class="form-label" for="email">E-mail</label><input id="email" type="email" class="form-control" required><div class="invalid-feedback">Informe um e-mail válido.</div></div>
+          <div class="col-12"><label class="form-label" for="msg">Mensagem</label><textarea id="msg" rows="4" class="form-control" required minlength="10"></textarea><div class="invalid-feedback">Escreva pelo menos 10 caracteres.</div></div>
+          <div class="col-12"><button class="btn btn-brand">Enviar mensagem</button></div>
+          <div class="col-12 d-none" id="ok"><div class="alert alert-success mb-0">Mensagem enviada. Respondo em breve.</div></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 text-center small text-secondary border-top border-secondary-subtle">© <span id="ano"></span> Samuel Borborema Campos. Feito com HTML, CSS, JavaScript e Bootstrap.</footer>
+
+<button class="btn btn-brand to-top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+
+<div class="modal fade" id="projModal" tabindex="-1" aria-labelledby="projTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header border-secondary-subtle"><h3 class="modal-title h5" id="projTitle"></h3><button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div>
+    <div class="modal-body"><img id="projImg" class="img-fluid rounded mb-3 d-none" alt="Print do projeto"><p id="projDesc"></p><p class="small text-secondary mb-0">Tecnologias: <span id="projTech"></span></p></div>
+    <div class="modal-footer border-secondary-subtle"><a href="#" id="projCode" class="btn btn-ghost btn-sm d-none" target="_blank" rel="noopener">Ver código</a><a href="#" id="projLive" class="btn btn-brand btn-sm d-none" target="_blank" rel="noopener">Ver projeto</a></div>
+  </div></div>
+</div>
+
+<div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header border-secondary-subtle"><h3 class="modal-title h5" id="certTitle"></h3><button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div>
+    <div class="modal-body text-center"><img id="certImg" class="img-fluid rounded" alt="Imagem do certificado"><p id="certMsg" class="text-secondary mb-0 d-none">Imagem do certificado em breve.</p></div>
+  </div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
