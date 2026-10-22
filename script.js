@@ -140,3 +140,11 @@ $$('.thumb').forEach(t=>t.addEventListener('click',()=>t.nextElementSibling.quer
     desenhar(t);
   })(0);
 })();
+
+// menu do celular: fundo sólido enquanto aberto e fecha ao tocar em um link
+(()=>{
+  const menu=$('#menu');
+  menu.addEventListener('show.bs.collapse',()=>nav.classList.add('aberto'));
+  menu.addEventListener('hide.bs.collapse',()=>nav.classList.remove('aberto'));
+  $$('#menu a').forEach(a=>a.addEventListener('click',()=>{if(menu.classList.contains('show'))bootstrap.Collapse.getOrCreateInstance(menu).hide()}));
+})();

@@ -107,3 +107,15 @@ body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;ba
 #inicio{background:radial-gradient(50rem 28rem at var(--mx,70%) var(--my,20%),rgba(61,139,255,.16),transparent 60%)}
 .stat,.tool{background:rgba(10,20,40,.72)}
 footer{background:rgba(0,0,0,.35)}
+
+/* navbar: botão Contato alinhado e menu do celular */
+.nav-cta{display:inline-block;padding:.4rem 1.1rem;border-radius:999px;background:var(--blue);color:#001028;font-weight:600;line-height:1.5;text-decoration:none;transition:background .2s}
+.nav-cta:hover{background:var(--blue-soft);color:#001028}
+@media(min-width:992px){.navbar-nav{align-items:center}}
+@media(max-width:991.98px){
+  .navbar-collapse{margin-top:.6rem;padding:.6rem 0 .4rem;border-top:1px solid var(--line)}
+  .navbar-nav{gap:.25rem;text-align:center}
+  .nav-link{padding:.7rem 1rem!important}
+  .nav-cta{display:block;text-align:center;padding:.7rem 1rem;margin-top:.4rem}
+  .navbar.aberto .container{background:rgba(5,10,24,.97)}
+}
